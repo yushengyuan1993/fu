@@ -7,9 +7,41 @@
   <title>新年快乐！</title>
   <style>
     span {
+      display: inline-block;
       padding: 20px;
     }
-
+    .rotateA {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    .rotateB {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+    .rotateC {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+    .rotateD {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    }
+    .rotateE {
+      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+    }
+    .rotateF {
+      transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+    }
+    .rotateG {
+      transform: rotate(315deg);
+      -webkit-transform: rotate(315deg);
+    }
+    .rotateH {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
     .songti {
       font-family: '宋体'
     }
@@ -43,14 +75,15 @@
 </head>
 <body>
 
-  <!-- <div id="box" class="css100e9da7461be02">福</div> -->
   <div id="content"></div>
 
   <script defer>
     var fontList = ['yahei','songti','heiti','css100e9da7461be02', 'css100ea073951be02', 'css100ea56f861be02', 'css100ea704101be02', 'css100ea7d2ca1be02', 'css100ea8ae751be02', 'css100ea92fca1be02', 'css100eaa0e721be02', 'css100eb46b951be02', 'css100eb4fd751be02'];
+    var rotate = ['rotateA','rotateB','rotateC','rotateD','rotateE','rotateF','rotateG','rotateH'];
 
     for (let i = 0; i < 1000; i++) {
       let randomFont = Math.floor(Math.random()*13);
+      let randomRotate = Math.floor(Math.random()*8);
       let rondomClrR = Math.floor(Math.random()*255);
       let rondomClrG = Math.floor(Math.random()*255);
       let rondomClrB = Math.floor(Math.random()*255);
@@ -58,7 +91,8 @@
 
       let span = document.createElement("SPAN");
       span.innerText = '福';
-      span.setAttribute('class', fontList[randomFont]);
+      span.classList.add(fontList[randomFont]);
+      span.classList.add(rotate[randomRotate]);
       span.style.color = 'rgb('+rondomClrR+', '+rondomClrG+', '+rondomClrB+')';
       span.style.fontSize = rondomFtSz+'px';
 
