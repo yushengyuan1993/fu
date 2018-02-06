@@ -30,15 +30,6 @@
       animation: rotate1 2s ease-in-out infinite;
       -webkit-animation: rotate1 2s ease-in-out infinite;
     }
-    .songti {
-      font-family: '宋体'
-    }
-    .yahei {
-      font-family: '微软雅黑'
-    }
-    .heiti {
-      font-family: '黑体'
-    }
 
     @keyframes rotate {
       0%  {
@@ -109,11 +100,11 @@
   <div id="content"></div>
 
   <script async>
-    var fontList = ['yahei', 'songti', 'heiti', 'css100e9da7461be02', 'css100ea073951be02', 'css100ea56f861be02', 'css100ea704101be02', 'css100ea7d2ca1be02', 'css100ea8ae751be02', 'css100ea92fca1be02', 'css100eaa0e721be02', 'css100eb46b951be02', 'css100eb4fd751be02'];
+    var fontList = ['css100e9da7461be02', 'css100ea073951be02', 'css100ea56f861be02', 'css100ea704101be02', 'css100ea7d2ca1be02', 'css100ea8ae751be02', 'css100ea92fca1be02', 'css100eaa0e721be02', 'css100eb46b951be02', 'css100eb4fd751be02'];
     var rotate = ['rotateA', 'rotateB', 'rotateC', 'rotateD', 'rotateE', 'rotate', 'rotate', 'rotate', 'rotate', 'rotate'];
 
     for (let i = 0; i < 300; i++) {
-      let randomFont = Math.floor(Math.random()*13);
+      let randomFont = Math.floor(Math.random()*10);
       let randomRotate = Math.floor(Math.random()*10);
       let rondomClrR = Math.floor(Math.random()*256);
       let rondomClrG = Math.floor(Math.random()*256);
