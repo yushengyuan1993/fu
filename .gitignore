@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# yushare
+1_www.yvshare.cn_bundle.crt
+2_www.yvshare.cn.key
+
 # Runtime data
 pids
 *.pid
