@@ -7,8 +7,8 @@ yarn-error.log*
 
 # yushare
 fu.yvshare.cn/
-1_www.yvshare.cn_bundle.crt
-2_www.yvshare.cn.key
+1_fu.yvshare.cn_bundle.crt
+2_fu.yvshare.cn.key
 
 # Runtime data
 pids
