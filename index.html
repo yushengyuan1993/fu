@@ -12,134 +12,26 @@
       margin: 20px;
     }
     .rotateA {
-      animation: rotate 6s ease-in-out infinite;
-      -webkit-animation: rotate 6s ease-in-out infinite;
+      transform: rotate(-15deg);
     }
     .rotateB {
-      animation: rotate 4s linear infinite;
-      -webkit-animation: rotate 4s linear infinite;
+      transform: rotate(-10deg);
     }
     .rotateC {
-      animation: rotate 2s ease-in-out infinite;
-      -webkit-animation: rotate 2s ease-in-out infinite;
+      transform: rotate(-5deg);
     }
     .rotateD {
-      animation: rotate1 4s linear infinite;
-      -webkit-animation: rotate1 4s linear infinite;
+      transform: rotate(5deg);
     }
     .rotateE {
-      animation: rotate1 2s ease-in-out infinite;
-      -webkit-animation: rotate1 2s ease-in-out infinite;
+      transform: rotate(10deg);
     }
     .rotateF {
-      animation: anime 4s ease-in-out infinite;
-      -webkit-animation: anime 4s ease-in-out infinite;
+      transform: rotate(15deg);
     }
     .rotateG {
-      animation: anime1 4s ease-in-out infinite;
-      -webkit-animation: anime1 4s ease-in-out infinite;
+      transform: rotate(180deg);
     }
-
-    @keyframes rotate {
-      0%  {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-    }
-    @-webkit-keyframes rotate {
-      0%  {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @keyframes rotate1 {
-      0%  {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-      100% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-    }
-    @-webkit-keyframes rotate1 {
-      0%  {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-      100% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-      }
-    }
-
-    @keyframes anime {
-      0% {
-        transform: rotate(0deg) scale(1);
-        -webkit-transform: rotate(0deg) scale(1);
-      }
-      50% {
-        transform: rotate(360deg) scale(1.4);
-        -webkit-transform: rotate(360deg) scale(1.4);
-      }
-      100% {
-        transform: rotate(0deg) scale(1);
-        -webkit-transform: rotate(0deg) scale(1)
-      }
-    }
-    @-webkit-keyframes anime {
-      0% {
-        transform: rotate(0deg) scale(1);
-        -webkit-transform: rotate(0deg) scale(1);
-      }
-      50% {
-        transform: rotate(360deg) scale(1.4);
-        -webkit-transform: rotate(360deg) scale(1.4);
-      }
-      100% {
-        transform: rotate(0deg) scale(1);
-        -webkit-transform: rotate(0deg) scale(1)
-      }
-    }
-
-    @keyframes anime1 {
-      0% {
-        transform: rotateY(0deg) scale(1);
-        -webkit-transform: rotateY(0deg) scale(1);
-      }
-      50% {
-        transform: rotateY(360deg) scale(1.2);
-        -webkit-transform: rotateY(360deg) scale(1.2);
-      }
-      100% {
-        transform: rotateY(0deg) scale(1);
-        -webkit-transform: rotateY(0deg) scale(1)
-      }
-    }
-    @-webkit-keyframes anime1 {
-      0% {
-        transform: rotateY(0deg) scale(1);
-        -webkit-transform: rotateY(0deg) scale(1);
-      }
-      50% {
-        transform: rotateY(360deg) scale(1.2);
-        -webkit-transform: rotateY(360deg) scale(1.2);
-      }
-      100% {
-        transform: rotateY(0deg) scale(1);
-        -webkit-transform: rotateY(0deg) scale(1)
-      }
-    }
-    
   </style>
   <!-- css2601c4a91c1be02 -->
   <link href='http://cdn.repository.webfont.com/webfonts/nomal/114178/45803/6017b516f629d8ff00c5d4bf.css' rel='stylesheet' type='text/css' />
@@ -187,7 +79,7 @@
       var rondomClrR = Math.floor(Math.random()*(256-150+1)+150);
       var rondomClrG = Math.floor(Math.random()*100);
       var rondomClrB = Math.floor(Math.random()*100);
-      var rondomFtSz = Math.floor(18+Math.random()*(180-18));
+      var rondomFtSz = Math.floor(18+Math.random()*(160-18));
 
       var span = document.createElement("SPAN");
       span.innerText = '福';
